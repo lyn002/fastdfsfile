@@ -19,5 +19,6 @@ public class FastdfsfileApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(FastdfsfileApplication.class, args);
+
 	}
 }
