@@ -16,14 +16,16 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-import static lyn.fastdfsfile.fastdfsfile.Dao.FileManagerCofig.PROTOCOL;
-import static lyn.fastdfsfile.fastdfsfile.Dao.FileManagerCofig.SEPARATOR;
-import static lyn.fastdfsfile.fastdfsfile.Dao.FileManagerCofig.TRACKER_NGNIX_ADDR;
-
 @Service
 public class fastdfsFileService {
 
     private static String CONFIG_FILENAME = "templates/fdfs_client.conf";
+
+    public static String PROTOCOL = "http://";
+
+    public static String SEPARATOR = "/";
+
+    public static String TRACKER_NGNIX_ADDR = "193.112.72.91";
 
     private static String path;
 
@@ -35,7 +37,7 @@ public class fastdfsFileService {
         }
     }
 
-    private static final String fdfsClientConfigFilePath = path + File.separator + CONFIG_FILENAME;
+    private static String fdfsClientConfigFilePath = path + File.separator + CONFIG_FILENAME;
     private static StorageClient1 storageClient1 = null;
 
     // 初始化FastDFS Client

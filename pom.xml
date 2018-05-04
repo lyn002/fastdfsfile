@@ -71,9 +71,6 @@
 			<artifactId>mockito-core</artifactId>
 		</dependency>
 
-
-
-
 		<dependency>
 			<groupId>fastdfs-client-java</groupId>
 			<artifactId>fastdfs-client-java</artifactId>
