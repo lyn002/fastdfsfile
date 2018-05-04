@@ -19,6 +19,8 @@ public class FastdfsfileApplication {
 
 	public static void main(String[] args) throws IOException {
 		SpringApplication.run(FastdfsfileApplication.class, args);
-
+		File file = new File("C:\\Users\\qwer\\Desktop\\2.jpg");
+		String fid = fastdfsFileService.uploadFile(file,file.getName());
+		System.out.println("upload local file " + file.getPath() + " ok, fileid=" + fid);
 	}
 }
